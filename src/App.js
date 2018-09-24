@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
 
-const App = () => {
+class App extends Component {
 
   componentDidMount(){
-    return fetch("http://api.open-notify.org/astros.json")
+    fetch("http://api.open-notify.org/astros.json")
             .then(resp=>resp.json())
             .then(json=>json)
 
@@ -19,4 +19,4 @@ const App = () => {
 }
 
 
-export default App;
+export default App
